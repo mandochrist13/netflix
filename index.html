@@ -7,8 +7,8 @@
     <script src="./cdn.js"></script>
 </head>
 <body class="bg-[#232323]">
-    
-    <section class="p-[15px] opacity-80 bg-[url('./asset/img/US-en-20240617-popsignuptwoweeks-perspective_alpha_website_small.jpg.png')]">
+
+    <section class="xl:bg-[url('./asset/img/back1.png')] md:h-[500px] p-[15px] opacity-100 bg-cover bg-center bg-[url('./asset/img/US-en-20240617-popsignuptwoweeks-perspective_alpha_website_small.jpg.png')] md:bg-[url('./asset/img/back.png')] ">
     <header class="">
         <nav class="flex justify-between items-center">
 
@@ -18,7 +18,9 @@
             </div>
 
             <!-- cta sign -->
-            <div>
+            <div class="flex gap-4">
+                <button class="hidden md:flex p-[10px] items-center flex justify-between border-2 rounded-[4px] bg-[#232323] opacity-80 text-[13px] text-white w-[125px] h-[32px] p-[5px]"><img class="w-[14px]" src="./asset/img/ic_twotone-translate.svg" alt=""> English <img class="w-[15px] z-1" src="./asset/img/bxs_down-arrow.svg" alt=""></button>
+
                 <button class="text-white border-transparent py-[5px] px-[15px] rounded-[6px] bg-[#E50914]">sign in</button>
             </div>
         </nav>
@@ -45,61 +47,79 @@
               </div>
 
         </div>
-        <!-- champ mail -->
-        <div>
-            <input class="m-[10px] rounded-[6px] bg-current opacity-80 border-2 border-[#232323] w-[294px] h-[48px]" type="text">
-        </div>
 
-        <!-- cta start -->
-        <div>
-            <button class="flex gap-3 m-[15px] text-white border-transparent py-[15px] px-[20px] rounded-[6px] bg-[#E50914]">Get Started <img src="./asset/img/weui_arrow-filled.svg" alt=""></button>
+
+        <div class="md:flex md:items-center md:flex-row flex flex-col items-center">
+             <!-- champ mail -->
+            <div>
+                 <input class="m-[10px] rounded-[6px] bg-current opacity-80 border-2 border-[#232323] w-[294px] h-[48px]" type="text">
+             </div>
+
+            <!-- cta start -->
+             <div>
+                  <button class="flex gap-3 m-[15px] text-white border-transparent py-[15px] px-[20px] rounded-[6px] bg-[#E50914]">Get Started <img src="./asset/img/weui_arrow-filled.svg" alt=""></button>
+             </div>
         </div>
     </section>
     </section>
+
+    
 
         <!-- block1 -->
-    <section class="">
+    <section class=" md:bg-black md:flex md:items-center md:justify-center md:mt-[-38px] ">
 
         <!-- pop corn -->
-        <div class="mt-[-40px] px-[20px]">
+        <div class="md:hidden md:items-center md:flex md:flex-col mt-[-40px] px-[20px]">
             <img src="./asset/img/SVG.svg" alt="">
         </div>
 
 
-        <div class="bg-[url('./asset/img/bg.jpeg')] mt-[-38px] pt-[50px] px-[20px] pb-[20px]">
-        <div>
-            <h2 class="text-[18px] text-white">The Netflix you love for just $6.99.</h2>
-        </div>
-        <div>
-            <p class="text-[15px] text-white">Get the Standard with ads plan.</p>
-        </div>
-        <div>
-            <a class="text-blue-500" href="">Learn More</a>
-        </div>
+        <div class="bg-cover md:items-center md:flex md:gap-[20px] md:justify-center md:mx-[10%] ls:bg-[url('./asset/img/bg.jpeg')] bg-[url('./asset/img/bg.jpeg')] mt-[-38px] pt-[50px] md:py-[40px] px-[20px] pb-[20px] md:w-[80%]">
+            <div class="hidden md:block">
+                <img src="./asset/img/SVG.svg" alt="">
+            </div>
+
+            <div>
+                <div>
+                    <h2 class="text-[18px] text-white">The Netflix you love for just $6.99.</h2>
+                </div>
+                <div>
+                    <p class="text-[15px] text-white">Get the Standard with ads plan.</p>
+                </div>
+                <div>
+                    <a class="text-blue-500" href="">Learn More</a>
+                </div>
+            </div>
         </div>
     </section>
 
 
     <!-- block2 -->
-    <section class="mb-[8px] bg-black px-[15px] gap-[10px] py-[50px] flex flex-col justify-center">
-        <div>
-            <h1 class="text-white text-[35px] font-bold text-center">Enjoy on your TV</h1>
+    <section class="xl:px-[100px] md:flex md:flex-row md:items-center mb-[8px] bg-black px-[15px] gap-[10px] py-[50px] md:flex flex flex-col justify-center">
+        <div class="md:pl-[0px]">
+            <div>
+                <h1 class="md:text-left text-white text-[30px] md:text-[40px] font-bold text-center">Enjoy on your TV</h1>
+            </div>
+            <div>
+                <p class="xl:text-[25px] md:text-left text-white text-center px-[50px]">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+            </div>
         </div>
         <div>
-            <p class="text-white text-center px-[50px]">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
-        </div>
-        <div class="flex flex-col justify-center">
-            <img src="./asset/img/tv.png.png" alt="">
+            <div class="flex flex-col justify-center">
+                <img class="md:w-[474px] " src="./asset/img/tv.png.png" alt="">
+            </div>
         </div>
     </section>
 
      <!-- block3 -->
-     <section class="mb-[8px] bg-black px-[15px] gap-[10px] py-[50px] flex flex-col justify-center">
+     <section class="xl:px-[100px] md:flex md:flex-row-reverse md:items-center  mb-[8px] bg-black px-[15px] gap-[10px] py-[50px] flex flex-col justify-center">
         <div>
-            <h1 class="text-white text-[35px] font-bold text-center">Watch everywhere</h1>
-        </div>
-        <div>
-            <p class="text-white text-center px-[50px]">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            <div>
+                <h1 class="md:text-left md:text-[40px] text-white text-[30px] font-bold text-center">Watch everywhere</h1>
+            </div>
+            <div>
+                <p class="xl:text-[25px] md:text-left text-white text-center px-[50px]">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
         </div>
         <div class="flex flex-col justify-center">
             <img src="./asset/img/device-pile.png.svg" alt="">
@@ -107,12 +127,14 @@
     </section>
 
     <!-- block4 -->
-    <section class="mb-[8px] bg-black px-[15px] gap-[10px] py-[50px] flex flex-col justify-center">
+    <section class="md:flex md:flex-row md:items-center xl:px-[100px]  mb-[8px] bg-black px-[15px] gap-[10px] py-[50px] flex flex-col justify-center items-center">
         <div>
-            <h1 class="px-[10px] text-white text-[31px] font-bold text-center">Create profiles for kids</h1>
-        </div>
-        <div>
-            <p class="text-white text-center px-[30px]">Send kids on adventures with their favorite characters in a space made just for them -free with your membership.</p>
+            <div>
+                <h1 class="md:text-left md:text-[40px] px-[10px] text-white text-[30px] font-bold text-center">Create profiles for kids</h1>
+            </div>
+            <div>
+                <p class="xl:text-[25px] md:text-left text-white text-center px-[30px]">Send kids on adventures with their favorite characters in a space made just for them -free with your membership.</p>
+            </div>
         </div>
         <div>
             <img src="./asset/img/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png.svg" alt="">
@@ -120,12 +142,14 @@
     </section>
 
     <!-- block5 -->
-    <section class="mb-[8px] bg-black px-[15px] gap-[10px] pt-[50px] pb-[70px] flex flex-col justify-center">
+    <section class=" md:flex md:flex-row-reverse md:items-center  mb-[8px] bg-black px-[15px] gap-[10px] pt-[50px] pb-[70px] flex flex-col justify-center">
         <div>
-            <h1 class="text-white text-[31px] font-bold text-center">Download your shows to watch offline</h1>
-        </div>
-        <div>
-            <p class="text-white text-center px-[30px]">Watch on a plane, train, of submarine...</p>
+            <div>
+            <h1 class="md:text-left md:text-[40px] text-white text-[31px] font-bold text-center">Download your shows to watch offline</h1>
+            </div>
+            <div>
+            <p class="xl:text-[25px] md:text-left text-white text-center px-[30px]">Watch on a plane, train, of submarine...</p>
+            </div>
         </div>
         <div class="flex flex-col justify-center items-center">
             <img src="./asset/img/mobile-0819.jpg.svg" alt="">
@@ -144,61 +168,70 @@
     <!-- block question -->
     <section class=" bg-black px-[15px] gap-[10px] py-[50px] flex flex-col justify-center">
         <div>
-            <h1 class="px-[10px] text-white text-[31px] font-bold text-center">Frequently Asked Questions</h1>
+            <h1 class="px-[10px] text-white text-[30px] font-bold text-center">Frequently Asked Questions</h1>
         </div>
         <div class="flex flex-col items-center gap-[9px]">
-            <button class="w-[342px] h-[72px] px-[24px] flex items-center justify-between text-white bg-[#232323]">What is netflix?<img src="./asset/img/ic_round-add.svg" alt=""></button>
-            <button class="w-[342px] h-[72px] px-[24px] flex items-center justify-between text-white bg-[#232323]">How much does Netflix cost?<img src="./asset/img/ic_round-add.svg" alt=""></button>
-            <button class="w-[342px] h-[72px] px-[24px] flex items-center justify-between text-white bg-[#232323]">Where can I watch?<img src="./asset/img/ic_round-add.svg" alt=""></button>
-            <button class="w-[342px] h-[72px] px-[24px] flex items-center justify-between text-white bg-[#232323]">How do i cancel?<img src="./asset/img/ic_round-add.svg" alt=""></button>
-            <button class="w-[342px] h-[72px] px-[24px] flex items-center justify-between text-white bg-[#232323]">What can I watch on netflix?<img src="./asset/img/ic_round-add.svg" alt=""></button>
-            <button class="w-[342px] h-[72px] px-[24px] flex items-center justify-between text-white bg-[#232323]">Is Netflix good for kids?<img src="./asset/img/ic_round-add.svg" alt=""></button>
+            <button class="md:w-[90%] xl:w-[60%] w-[342px] h-[72px] px-[24px] flex items-center justify-between text-white bg-[#232323]">What is netflix?<img src="./asset/img/ic_round-add.svg" alt=""></button>
+            <button class="md:w-[90%] xl:w-[60%] w-[342px] h-[72px] px-[24px] flex items-center justify-between text-white bg-[#232323]">How much does Netflix cost?<img src="./asset/img/ic_round-add.svg" alt=""></button>
+            <button class="md:w-[90%] xl:w-[60%] w-[342px] h-[72px] px-[24px] flex items-center justify-between text-white bg-[#232323]">Where can I watch?<img src="./asset/img/ic_round-add.svg" alt=""></button>
+            <button class="md:w-[90%] xl:w-[60%] w-[342px] h-[72px] px-[24px] flex items-center justify-between text-white bg-[#232323]">How do i cancel?<img src="./asset/img/ic_round-add.svg" alt=""></button>
+            <button class="md:w-[90%] xl:w-[60%] w-[342px] h-[72px] px-[24px] flex items-center justify-between text-white bg-[#232323]">What can I watch on netflix?<img src="./asset/img/ic_round-add.svg" alt=""></button>
+            <button class="md:w-[90%] xl:w-[60%] w-[342px] h-[72px] px-[24px] flex items-center justify-between text-white bg-[#232323]">Is Netflix good for kids?<img src="./asset/img/ic_round-add.svg" alt=""></button>
         </div>
     </section>
 
      <!-- block newsletter -->
-    <section class="flex flex-col justify-center items-center bg-black gap-3">
+    <section class="mb-[8px] flex flex-col justify-center items-center bg-black gap-3">
         <div>
             <p class="text-white text-center px-[30px]">Ready to watch? Enter your email to create or restart your membership.</p>
         </div>
-        <div class="flex flex-col justify-center">
-            <input class="rounded-[6px] opacity-80 bg-[#0F0F0F] border-2 border-[#232323] w-[294px] h-[48px]" type="text">
-        </div>
 
-        <!-- cta start -->
-        <div class="">
-            <button class="flex gap-3 m-[15px] text-white border-transparent py-[15px] px-[20px] rounded-[6px] bg-[#E50914]">Get Started <img src="./asset/img/weui_arrow-filled.svg" alt=""></button>
+        <div class=" flex flex-col justify-center items-center xl:flex xl:flex-row">
+            <!-- champ -->
+            <div class="flex flex-col justify-center">
+                <input class="rounded-[6px] opacity-80 bg-[#0F0F0F] border-2 border-[#232323] w-[294px] h-[48px]" type="text">
+            </div>
+    
+            <!-- cta start -->
+            <div class="">
+                <button class="flex gap-3 m-[15px] text-white border-transparent py-[15px] px-[20px] rounded-[6px] bg-[#E50914]">Get Started <img src="./asset/img/weui_arrow-filled.svg" alt=""></button>
+            </div>
         </div>
     </section>
 
-    <footer class="bg-black">
-        <div>
-            <p class="text-white text-center">Questions? call 1-844-505-2993</p>
+    <footer class="bg-black p-[20px] items-center">
+        <div class="flex items-center justify-center">
+            <p class=" text-white text-center">Questions? <p class="text-white underline">call 1-844-505-2993</p></p>
         </div>
 
         <!-- list link -->
-        <div>
-            <a class="text-white" href="">FAQ</a>
-            <a class="text-white" href="">FAQ</a>
-            <a class="text-white" href="">FAQ</a>
-            <a class="text-white" href="">FAQ</a>
-            <a class="text-white" href="">FAQ</a>
-            <a class="text-white" href="">FAQ</a>
-            <a class="text-white" href="">FAQ</a>
-            <a class="text-white" href="">FAQ</a>
-            <a class="text-white" href="">FAQ</a>
-            <a class="text-white" href="">FAQ</a>
-            <a class="text-white" href="">FAQ</a>
-            <a class="text-white" href="">FAQ</a>
-            <a class="text-white" href="">FAQ</a>
+        <div class="grid grid-cols-2 p-[10px] md:grid-cols-4 items-center">
+            <a class="text-white underline text-[14px]" href="">FAQ</a>
+            <a class="text-white underline text-[14px]" href="">account</a>
+            <a class="text-white underline text-[14px]" href="">Investor Relations</a>
+            <a class="text-white underline text-[14px]" href="">Netflix shop</a>
+            <a class="text-white underline text-[14px]" href="">Buy Gift cards</a>
+            <a class="text-white underline text-[14px]" href="">Terms of Use</a>
+            <a class="text-white underline text-[14px]" href="">Cookie Preferences</a>
+            <a class="text-white underline text-[14px]" href="">Contact Us</a>
+            <a class="text-white underline text-[14px]" href="">Legal Notices</a>
+            <a class="text-white underline text-[14px]" href="">Do Not Sell or Share My Personal Information</a>
+            <a class="text-white underline text-[14px]" href="">Help Center</a>
+            <a class="text-white underline text-[14px]" href="">Media Center</a>
+            <a class="text-white underline text-[14px]" href="">Jobs</a>
+            <a class="text-white underline text-[14px]" href="">Redeem gift Cards</a>
+            <a class="text-white underline text-[14px]" href="">Ways to watch</a>
+            <a class="text-white underline text-[14px]" href="">Privacy</a>
+            <a class="text-white underline text-[14px]" href="">Corporate Information</a>
+            <a class="text-white underline text-[14px]" href="">Speed Test</a>
+            <a class="text-white underline text-[14px]" href="">Only on Netflix</a>
+            <a class="text-white underline text-[14px]" href="">Ad Choices</a>
         </div>
 
         <div>
-            <button>English</button>
+            <button class="p-[10px] items-center flex justify-between border-2 rounded-[4px] bg-[#232323] text-[13px] text-white w-[125px] h-[32px] p-[5px]"><img class="w-[14px]" src="./asset/img/ic_twotone-translate.svg" alt=""> English <img class="w-[15px]" src="./asset/img/bxs_down-arrow.svg" alt=""></button>
         </div>
     </footer>
-
-
 
 </body>
 </html>
