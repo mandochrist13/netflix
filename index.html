@@ -9,19 +9,20 @@
 <body class="bg-[#232323]">
     
     <header class="xl:bg-[url('./asset/img/back1.png')] md:h-[500px] xl:h-[700px] p-[15px]  bg-cover bg-center bg-[url('./asset/img/US-en-20240617-popsignuptwoweeks-perspective_alpha_website_small.jpg.png')] md:bg-[url('./asset/img/back.png')] ">
-        <nav class="flex justify-between items-center">
+        <nav class="flex justify-between xl:justify-around items-center">
 
             <!-- logo -->
             <div class="">
-                <img src="./asset/img/Vector.svg" alt="">
+                <img class="xl:w-[148px]" src="./asset/img/Vector.svg" alt="">
             </div>
 
             <!-- cta sign -->
             <div class="flex gap-4">
-                <button class="hidden md:flex p-[10px] items-center flex justify-between border-2 rounded-[4px] bg-[#232323] opacity-80 text-[13px] text-white w-[125px] h-[32px] p-[5px]"><img class="w-[14px]" src="./asset/img/ic_twotone-translate.svg" alt=""> English <img class="w-[15px] z-1" src="./asset/img/bxs_down-arrow.svg" alt=""></button>
+               <button class="text-white border-transparent py-[5px] px-[15px] rounded-[6px] bg-[#E50914]">sign in</button>
+ 
+              <button class="hidden md:flex p-[10px] items-center flex justify-between border-2 rounded-[4px] bg-[#232323] opacity-80 text-[13px] text-white w-[125px] h-[32px] p-[5px]"><img class="w-[14px]" src="./asset/img/ic_twotone-translate.svg" alt=""> English <img class="w-[15px] z-1" src="./asset/img/bxs_down-arrow.svg" alt=""></button>
 
-                <button class="text-white border-transparent py-[5px] px-[15px] rounded-[6px] bg-[#E50914]">sign in</button>
-            </div>
+           </div>
         </nav>
         
         <!-- block central -->
@@ -31,17 +32,17 @@
             <div class="flex flex-col gap-[20px]">
                 <!-- texte1 -->
                     <div>
-                       <h1 class="text-white text-center text-[30px] font-bold">Unlimited movies, TV shows, and more</h1>
+                       <h1 class="xl:text-[48px] text-white text-center text-[30px] font-bold">Unlimited movies, TV shows, and more</h1>
                    </div>
     
                   <!-- paragraph1 -->
                   <div>
-                      <p class="text-white text-center text-[17px]">Watch anywhere. Cancel anytime</p>
+                      <p class="xl:text-[24px] text-white text-center text-[17px]">Watch anywhere. Cancel anytime</p>
                  </div>
     
                   <!-- paragraph2 -->
                   <div>
-                      <p class="text-white text-center text-[17px]">Ready to watch? Enter your email to create or restart your membership.</p>
+                      <p class="xl:text-[24px] text-white text-center text-[17px]">Ready to watch? Enter your email to create or restart your membership.</p>
                   </div>
     
             </div>
@@ -50,12 +51,12 @@
             <div class="md:flex md:items-center md:flex-row flex flex-col items-center">
                  <!-- champ mail -->
                 <div>
-                     <input class="m-[10px] rounded-[6px] bg-current opacity-80 border-2 border-[#232323] w-[294px] h-[48px]" type="text">
+                     <input class="m-[10px]  rounded-[6px] bg-current opacity-80 border-2 border-[#232323] px-[15px] w-[294px] h-[48px]"  type="text" placeholder="adresse email"  >
                  </div>
     
                 <!-- cta start -->
                  <div>
-                      <button class="flex gap-3 m-[15px] text-white border-transparent py-[15px] px-[20px] rounded-[6px] bg-[#E50914]">Get Started <img src="./asset/img/weui_arrow-filled.svg" alt=""></button>
+                      <button class="xl:items-center xl:w-[207px] flex gap-3 m-[15px] xl:text-[1.5rem] text-white border-transparent py-[15px] px-[20px] rounded-[6px] bg-[#E50914]">Get Started <img class="xl:w-[15px]" src="./asset/img/weui_arrow-filled.svg" alt=""></button>
                  </div>
             </div>
         </section>
@@ -103,8 +104,11 @@
             </div>
         </div>
         <div>
-            <div class="flex flex-col justify-center">
-                <img class="md:w-[474px] xl:w-[552px]" src="./asset/img/tv.png.png" alt="">
+            <div class=" flex flex-col justify-center items-center">
+                <img class="relative z-50 md:w-[474px] xl:w-[552px]" src="./asset/img/tv.png.png" alt="">
+                <video class="absolute z-0 w-[250px] xl:w-[370px]" autoplay playsinline muted loop src="/asset/vid/WhatsApp Video 2024-06-28 at 17.15.25.mp4" type="video/mp4"></video>
+                
+            
             </div>
         </div>
     </section>
